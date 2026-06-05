@@ -17,7 +17,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <ClerkProvider localization={esMX}>
+        <ClerkProvider localization={esMX as any}>
             <html lang="es">
                 <body className={`${apfel_regular.className} antialiased`}>
                     <div className="flex flex-col min-h-screen">
